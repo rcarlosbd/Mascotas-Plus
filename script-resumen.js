@@ -152,7 +152,7 @@ form.addEventListener('submit', function (e) {
     `Edad: ${tableData.edad}\n` +
     `Localidad: ${tableData.localidad}\n` +
     `Fecha: ${tableData.fecha}\n` +
-    `¿Mascota preñada?: ${tableData.preñada}\n` +
+    `¿Mascota gestante?: ${tableData.preñada}\n` +
     `\nCosto Total: ${costoTotal}`;
 
   const whatsappLink = `https://wa.me/5491122553332?text=${encodeURIComponent(message)}`;
