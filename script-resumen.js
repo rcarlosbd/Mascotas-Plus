@@ -159,7 +159,17 @@ form.addEventListener('submit', function (e) {
 
   // Abrir enlace de WhatsApp directamente
   window.open(whatsappLink, '_blank');
+
+// Llamar a la función para resetear la página después de 1 minuto
+resetearPagina();
 });
+
+// Función para resetear la página después de 1 minuto
+function resetearPagina() {
+  setTimeout(() => {
+    window.location.href = 'index.html'; // Cambia 'index.html' con la URL de tu página de inicio
+  }, 60000); // 60000 milisegundos equivalen a 1 minuto
+}
 
 function getTableData() {
   const elements = ['nombreApellido', 'telefono', 'email', 'direccion', 'codigoPostal', 'felinoCantidad', 'caninoCantidad', 'peso', 'edad', 'localidad', 'fecha', 'preñada'];
